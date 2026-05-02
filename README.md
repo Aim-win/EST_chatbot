@@ -81,5 +81,4 @@ Les deux thèmes (clair/sombre) sont définis via `[data-theme="light"]` et `[da
 
 ```bash
 npm run build
-# Les fichiers compilés sont dans le dossier /dist
 ```
