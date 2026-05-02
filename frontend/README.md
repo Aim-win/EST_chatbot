@@ -1,8 +1,8 @@
-# 🎓 EST Chatbot Frontend
+#  EST Chatbot Frontend
 
 Interface React pour le chatbot de l'École Supérieure de Technologie.
 
-## ⚡ Démarrage rapide
+## Démarrage rapide
 
 ```bash
 # 1. Installer les dépendances
@@ -20,7 +20,7 @@ L'application est accessible sur **http://localhost:5173**
 
 ---
 
-## 📁 Structure du projet
+## Structure du projet
 
 ```
 src/
@@ -48,7 +48,7 @@ src/
 
 ---
 
-## 🔌 Connexion au backend
+## Connexion au backend
 
 Modifier `src/services/api.js` selon la forme de la réponse de votre backend :
 
@@ -70,14 +70,14 @@ Le body envoyé au backend a ce format :
 
 ---
 
-## 🎨 Thèmes
+##  Thèmes
 
 Les couleurs sont dans `src/styles/global.css` sous forme de variables CSS.
 Les deux thèmes (clair/sombre) sont définis via `[data-theme="light"]` et `[data-theme="dark"]`.
 
 ---
 
-## 🚀 Build production
+## Build production
 
 ```bash
 npm run build
