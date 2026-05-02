@@ -52,10 +52,6 @@ src/
 
 ## Connexion au backend
 
-Modifier `src/services/api.js` selon la forme de la réponse de votre backend :
-
-```js
-// Adapter ce champ au format de réponse de votre API :
 return data.reply || data.message || data.answer;
 ```
 
