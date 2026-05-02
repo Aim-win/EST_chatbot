@@ -28,24 +28,24 @@ L'application est accessible sur **http://localhost:5173**
 src/
 ├── components/
 │   ├── Chat/
-│   │   ├── ChatWindow.jsx      # Zone principale de chat
-│   │   ├── ChatBubble.jsx      # Bulle de message (user / bot)
-│   │   └── ChatInput.jsx       # Barre de saisie
+│   │   ├── ChatWindow.jsx     
+│   │   ├── ChatBubble.jsx  
+│   │   └── ChatInput.jsx  
 │   ├── Sidebar/
-│   │   ├── Sidebar.jsx         # Panneau historique
-│   │   └── HistoryItem.jsx     # Item de conversation
+│   │   ├── Sidebar.jsx        
+│   │   └── HistoryItem.jsx
 │   ├── Header/
-│   │   └── Header.jsx          # En-tête + bouton thème
+│   │   └── Header.jsx         
 │   └── UI/
-│       ├── ThemeToggle.jsx     # Bouton clair/sombre
-│       └── WelcomeScreen.jsx   # Écran d'accueil animé
+│       ├── ThemeToggle.jsx    
+│       └── WelcomeScreen.jsx  
 ├── context/
-│   ├── ThemeContext.jsx        # État global du thème
-│   └── ChatContext.jsx         # État global du chat + historique
+│   ├── ThemeContext.jsx       
+│   └── ChatContext.jsx        
 ├── services/
-│   └── api.js                  # Appels vers le backend
+│   └── api.js               
 └── styles/
-    └── global.css              # Variables CSS + animations
+    └── global.css       
 ```
 
 ---
