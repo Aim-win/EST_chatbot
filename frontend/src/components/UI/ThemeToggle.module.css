@@ -1,0 +1,33 @@
+.btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 12px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  cursor: pointer;
+  color: var(--text);
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 500;
+  transition: background var(--transition), border-color var(--transition), transform 0.15s;
+}
+
+.btn:hover {
+  background: var(--sidebar-hover);
+  border-color: var(--est-amber);
+}
+
+.btn:active {
+  transform: scale(0.96);
+}
+
+.icon {
+  font-size: 14px;
+  line-height: 1;
+}
+
+.label {
+  color: var(--text2);
+}

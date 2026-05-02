@@ -1,0 +1,126 @@
+.sidebar {
+  background: var(--sidebar-bg);
+  border-right: 1px solid var(--border);
+  overflow: hidden;
+  flex-shrink: 0;
+  transition: width 0.3s ease, background var(--transition);
+}
+
+.open   { width: var(--sidebar-w); }
+.closed { width: 0; border-right: none; }
+
+.inner {
+  width: var(--sidebar-w);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.sectionHead {
+  padding: 14px 14px 8px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.1px;
+  text-transform: uppercase;
+  color: var(--text3);
+  border-bottom: 1px solid var(--border);
+  flex-shrink: 0;
+}
+
+.newChatBtn {
+  margin: 10px 10px 6px;
+  padding: 9px 12px;
+  background: var(--est-blue);
+  color: #fff;
+  border: none;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  transition: opacity var(--transition);
+  flex-shrink: 0;
+}
+
+.newChatBtn:hover  { opacity: 0.85; }
+.newChatBtn:active { opacity: 0.7; }
+
+.list {
+  flex: 1;
+  overflow-y: auto;
+  padding: 6px 8px;
+}
+
+.empty {
+  font-size: 13px;
+  color: var(--text3);
+  text-align: center;
+  padding: 24px 0;
+}
+
+/* ── History Item ── */
+.item {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 9px 10px;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  margin-bottom: 3px;
+  background: var(--sidebar-item);
+  border: 1px solid transparent;
+  transition: all 0.15s ease;
+  animation: slideInLeft 0.25s ease-out;
+}
+
+.item:hover         { background: var(--sidebar-hover); border-color: var(--border); }
+.item.active        { background: var(--sidebar-hover); border-color: var(--est-amber); }
+.item:hover .deleteBtn { opacity: 1; }
+
+.itemIcon {
+  font-size: 14px;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.itemContent {
+  flex: 1;
+  min-width: 0;
+}
+
+.itemTitle {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.itemTime {
+  font-size: 11px;
+  color: var(--text3);
+  margin-top: 2px;
+}
+
+.deleteBtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--text3);
+  font-size: 11px;
+  padding: 2px 4px;
+  border-radius: 4px;
+  opacity: 0;
+  transition: opacity 0.15s, color 0.15s, background 0.15s;
+  flex-shrink: 0;
+  line-height: 1;
+}
+
+.deleteBtn:hover {
+  color: #e24b4a;
+  background: rgba(226, 75, 74, 0.12);
+}

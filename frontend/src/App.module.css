@@ -1,0 +1,15 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background: var(--bg);
+  transition: background var(--transition);
+}
+
+.body {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}

@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap');
+
+/* ── EST Color Tokens ── */
+:root {
+  --est-gold:    #DFD0B8;
+  --est-blue:    #006a91;
+  --est-amber:   #FF9F00;
+  --est-card:    #948979;
+  --est-yellow:  #ecbe5b;
+  --sidebar-w:   268px;
+  --header-h:    58px;
+  --radius-sm:   6px;
+  --radius-md:   10px;
+  --radius-lg:   14px;
+  --transition:  0.25s ease;
+}
+
+/* ── Light Theme ── */
+[data-theme="light"] {
+  --bg:             #f5efe6;
+  --bg2:            #ede4d4;
+  --surface:        #ffffff;
+  --card-bg:        #DFD0B8;
+  --text:           #1a1410;
+  --text2:          #6b5e4e;
+  --text3:          #948979;
+  --border:         #c9b99a;
+  --border2:        #ddd0b8;
+  --user-bubble:    #006a91;
+  --user-text:      #ffffff;
+  --bot-bubble:     #EDE4D4;
+  --bot-text:       #1a1410;
+  --input-bg:       #ffffff;
+  --header-bg:      #DFD0B8;
+  --sidebar-bg:     #e8ddd0;
+  --sidebar-item:   #ddd0bc;
+  --sidebar-hover:  #cfc0a8;
+  --send-bg:        #006a91;
+  --welcome-bg:     #f0e8d8;
+  --scrollbar:      #c9b99a;
+}
+
+/* ── Dark Theme ── */
+[data-theme="dark"] {
+  --bg:             #0d0c0a;
+  --bg2:            #141210;
+  --surface:        #1c1a16;
+  --card-bg:        #28241e;
+  --text:           #DFD0B8;
+  --text2:          #948979;
+  --text3:          #6b5e4e;
+  --border:         #3a3228;
+  --border2:        #2a2520;
+  --user-bubble:    #006a91;
+  --user-text:      #ffffff;
+  --bot-bubble:     #231f18;
+  --bot-text:       #DFD0B8;
+  --input-bg:       #1c1a16;
+  --header-bg:      #141210;
+  --sidebar-bg:     #0d0c0a;
+  --sidebar-item:   #1c1a16;
+  --sidebar-hover:  #28241e;
+  --send-bg:        #006a91;
+  --welcome-bg:     #14120e;
+  --scrollbar:      #3a3228;
+}
+
+/* ── Reset ── */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+  font-family: 'Outfit', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  transition: background var(--transition), color var(--transition);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ── Scrollbars ── */
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar);
+  border-radius: 4px;
+}
+
+/* ── Animations ── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(14px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes popIn {
+  0%   { opacity: 0; transform: scale(0.6); }
+  70%  { transform: scale(1.08); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+@keyframes slideInLeft {
+  from { opacity: 0; transform: translateX(-20px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes bounce {
+  0%, 60%, 100% { transform: translateY(0); }
+  30%            { transform: translateY(-6px); }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.4; }
+}
