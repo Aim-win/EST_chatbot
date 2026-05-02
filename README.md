@@ -2,7 +2,13 @@
 
 Interface React pour le chatbot de l'École Supérieure de Technologie.
 
-## Démarrage rapide
+## Démarrage rapide 
+
+Dans frontend enter cette cmd :
+``` sh docker.sh```
+voici le site:
+
+```http://localhost:5173/```
 
 ```bash
 # 1. Installer les dépendances
