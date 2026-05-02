@@ -9,16 +9,12 @@ Dans frontend enter cette cmd :
 voici le site:
 
 ```http://localhost:5173/```
-
+## Configration:
 ```bash
 # 1. Installer les dépendances
 npm install
 
-# 2. Configurer le backend
-# Ouvrir .env et renseigner l'URL de votre backend :
-# VITE_API_URL=http://localhost:8000
-
-# 3. Lancer le serveur de développement
+# 2. Lancer le serveur de développement
 npm run dev
 ```
 
